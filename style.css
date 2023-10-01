@@ -1,0 +1,124 @@
+
+.lantern {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    background-color: #fcbf1c;
+    border-radius: 10px;
+    margin: 200px auto;
+}
+
+.handle {
+    width: 5px;
+    height: 75px;
+    background-color: #666;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+}
+
+.top {
+    width: 20px;
+    height: 70px;
+    background-color: #fcbf1c;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body {
+    width: 250px;
+    height: 144px;
+    background-color: #fcbf1c;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+p {
+    padding: 3px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Brush Script', cursive;
+    color: aliceblue;
+}
+
+.bottom {
+    width: 50px;
+    height: 20px;
+    background-color: #fcbf1c;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.lantern.chinese {
+    background-color: 	#FF0000; /* Đổi màu nền thành màu đỏ */
+}
+
+.lantern.chinese .handle {
+    background-color: #3e3e3e; /* Đổi màu cán đèn thành màu đen */
+}
+
+.lantern.chinese .top {
+    background-color: 	#FF0000; /* Đổi màu đỉnh đèn thành màu đỏ */
+}
+
+.lantern.chinese .body {
+    background-color: 	#FF0000; /* Đổi màu thân đèn thành màu đỏ */
+}
+
+.lantern.chinese .bottom {
+    background-color: #dc143c; /* Đổi màu đáy đèn thành màu đỏ */
+}
+
+@media (max-width: 740px) {
+    .lantern {
+        width: 100px;
+        height: 200px;
+        position: relative;
+        background-color: #fcbf1c;
+        border-radius: 10px;
+        margin: 250px  auto 0 auto;
+    }
+}
+
+
+@keyframes shake {
+    0% {
+      transform: translateX(-10px) rotate(-10deg);
+    }
+    25% {
+      transform: translateX(0px) rotate(10deg);
+    }
+    50% {
+      transform: translateX(10px) rotate(-10deg);
+    }
+    75% {
+      transform: translateX(0px) rotate(10deg);
+    }
+    100% {
+      transform: translateX(-10px) rotate(-10deg);
+    }
+  }
+  
+  
+  
+  .shaking {
+    animation: shake 2s infinite;
+  }
+  
+  
+
+
+
